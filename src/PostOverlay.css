@@ -1,0 +1,95 @@
+.postoverlay {
+  background-color: white;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #0000006e;
+  z-index: 1000;
+}
+.postoverlay__box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  width: 50%;
+  height: 70%;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 0px 40px;
+}
+.postoverlay__box > textarea {
+  padding: 10px;
+  width: 100%;
+  height: 70vh;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 30px;
+  outline-width: 0;
+  resize: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.postoverlay__avatarContainer {
+  /* background-color: red; */
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.2rem;
+  object-fit: contain;
+}
+.sidebar__avatar--textBox > p {
+  font-size: 1rem;
+}
+.postoverlay__avatar {
+  width: 60px !important;
+  height: 60px !important;
+}
+.postOverlay__box--buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  margin: 20px 0px;
+  padding: 10px 0;
+  border-top: 1px solid rgb(194, 194, 194);
+}
+.postOverlay__box--buttonContainer > button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  color: grey;
+  cursor: pointer;
+}
+.postOverlay__box--buttonContainer > button:active {
+  color: #000;
+  border: 1px solid #000;
+}
+.icon {
+  font-size: 25px !important;
+  cursor: pointer;
+}
+.postoverlay__box--icons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 20px;
+  margin: 20px 0;
+  color: grey;
+}
+.postoverlay__close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
